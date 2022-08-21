@@ -8,10 +8,11 @@
 import Foundation
 import UIKit
 
-struct DetailItemModel {
+struct DetailItemModel: Equatable {
 
     // MARK: - Internal Properties
 
+    let id: String
     let imageUrlInString: String
     let title: String
     var isFavorite: Bool
@@ -20,14 +21,15 @@ struct DetailItemModel {
 
     // MARK: - Initialization
 
-    internal init(imageUrlInString: String, title: String, isFavorite: Bool, content: String, dateCreation: Date) {
+    internal init(id: String,imageUrlInString: String, title: String, isFavorite: Bool, content: String, dateCreation: Date) {
+        self.id = id
         self.imageUrlInString = imageUrlInString
         self.title = title
         self.isFavorite = isFavorite
         self.content = content
 
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd.mm.yyyy"
+        formatter.dateFormat = "dd.MM.yyyy"
 
         self.dateCreation = formatter.string(from: dateCreation)
     }
@@ -36,6 +38,7 @@ struct DetailItemModel {
 
     static func createDefault() -> DetailItemModel {
         .init(
+            id: " ",
             imageUrlInString: "",
             title: "Самый милый корги",
             isFavorite: false,

@@ -29,6 +29,12 @@ class DetailViewController: UIViewController, UIGestureRecognizerDelegate {
         super.viewWillAppear(animated)
         configureNavigationBar()
     }
+    
+    // MARK: - Actions
+    @objc func searchButtonTapped() {
+        print("searchButtonTapped")
+        self.navigationController?.pushViewController(SearchViewController(), animated: true)
+    }
 
 }
 
@@ -49,6 +55,13 @@ private extension DetailViewController {
         navigationItem.leftBarButtonItem = backButton
         navigationItem.leftBarButtonItem?.tintColor = .black
         navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
+        let searchButton = UIBarButtonItem(image: UIImage(named: "search"),
+                                           style: .plain,
+                                           target: self,
+                                           action: #selector(searchButtonTapped))
+        navigationItem.rightBarButtonItem = searchButton
+        navigationItem.rightBarButtonItem?.tintColor = .black
     }
 
     func configureTableView() {
@@ -70,7 +83,7 @@ private extension DetailViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
     }
-
+    
 }
 
 // MARK: - UITableViewDataSource

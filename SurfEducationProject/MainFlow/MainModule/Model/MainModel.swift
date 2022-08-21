@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 
 final class MainModel {
+    
+    static let shared = MainModel()
+    
+    private init() {}
 
     // MARK: - Events
 
@@ -20,8 +24,11 @@ final class MainModel {
     var items: [DetailItemModel] = [] {
         didSet {
             didItemsUpdated?()
+            updateFavorites()
         }
     }
+    
+    private let favoriteService = FavoriteService()
 
     // MARK: - Methods
 
@@ -31,9 +38,10 @@ final class MainModel {
             case .success(let pictures):
                 self?.items = pictures.map { pictureModel in
                     DetailItemModel(
+                        id: pictureModel.id,
                         imageUrlInString: pictureModel.photoUrl,
                         title: pictureModel.title,
-                        isFavorite: false, // TODO: - Need adding `FavoriteService`
+                        isFavorite: { (self?.favoriteService.isFavorite(id: pictureModel.id))!}(),
                         content: pictureModel.content,
                         dateCreation: pictureModel.date
                     )
@@ -43,6 +51,11 @@ final class MainModel {
                 break
             }
         }
+    }
+    
+    func updateFavorites() {
+        let favorites = items.filter { $0.isFavorite }
+        favoriteService.storage.saveItems(itemArray: favorites.map { $0.id })
     }
 
 }

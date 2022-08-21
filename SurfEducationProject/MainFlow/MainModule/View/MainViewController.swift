@@ -19,7 +19,7 @@ final class MainViewController: UIViewController {
 
     // MARK: - Private Properties
 
-    private let model: MainModel = .init()
+    private let model = MainModel.shared
 
     // MARK: - Views
 
@@ -30,8 +30,21 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureApperance()
+        configureNavigationBar()
         configureModel()
         model.loadPosts()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        model.loadPosts()
+        self.collectionView.reloadData()
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func searchButtonTapped() {
+        self.navigationController?.pushViewController(SearchViewController(), animated: true)
     }
 
 }
@@ -41,7 +54,6 @@ final class MainViewController: UIViewController {
 private extension MainViewController {
 
     func configureApperance() {
-        navigationItem.title = "Главная"
         collectionView.register(UINib(nibName: "\(MainItemCollectionViewCell.self)", bundle: .main),
                                 forCellWithReuseIdentifier: "\(MainItemCollectionViewCell.self)")
         collectionView.dataSource = self
@@ -49,9 +61,20 @@ private extension MainViewController {
         collectionView.contentInset = .init(top: 10, left: 16, bottom: 10, right: 16)
     }
 
+    func configureNavigationBar() {
+        navigationItem.title = "Главная"
+        
+        let searchButton = UIBarButtonItem(image: UIImage(named: "search"),
+                                           style: .plain,
+                                           target: self,
+                                           action: #selector(searchButtonTapped))
+        navigationItem.rightBarButtonItem = searchButton
+        navigationItem.rightBarButtonItem?.tintColor = .black
+    }
+    
     func configureModel() {
         model.didItemsUpdated = { [weak self] in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.main.async() {
                 self?.collectionView.reloadData()
             }
         }

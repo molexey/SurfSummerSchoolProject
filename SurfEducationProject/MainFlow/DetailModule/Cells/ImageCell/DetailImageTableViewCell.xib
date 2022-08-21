@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="319"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SeK-7k-ylG">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" translatesAutoresizingMaskIntoConstraints="NO" id="SeK-7k-ylG">
                         <rect key="frame" x="16" y="16" width="288" height="273.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="SeK-7k-ylG" secondAttribute="height" multiplier="343:326" id="vLv-NI-0Ks"/>
@@ -26,7 +26,7 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="SeK-7k-ylG" secondAttribute="trailing" constant="16" id="F8X-hX-Xyd"/>
                     <constraint firstItem="SeK-7k-ylG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Izb-qH-b6S"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SeK-7k-ylG" secondAttribute="bottom" constant="8" id="LeS-uc-3AG"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SeK-7k-ylG" secondAttribute="bottom" priority="750" constant="8" id="LeS-uc-3AG"/>
                     <constraint firstItem="SeK-7k-ylG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="y6f-fh-w8t"/>
                 </constraints>
             </tableViewCellContentView>
