@@ -17,8 +17,27 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z39-tP-gej" userLabel="Logout">
+                    <rect key="frame" x="16" y="424" width="382" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="AGq-lB-Zx0"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Выйти"/>
+                    <connections>
+                        <action selector="logoutButtonTapped:" destination="-1" eventType="touchUpInside" id="eqY-LZ-w28"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="z39-tP-gej" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="G9i-a3-e7s"/>
+                <constraint firstItem="z39-tP-gej" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cv9-6i-CSX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z39-tP-gej" secondAttribute="trailing" constant="16" id="gxs-5V-QV6"/>
+                <constraint firstItem="z39-tP-gej" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xYM-td-MCr"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="57"/>
         </view>
     </objects>

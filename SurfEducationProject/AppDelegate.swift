@@ -31,22 +31,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         runLaunchScreen()
 
         if let tokenContainer = try? tokenStorage.getToken(), !tokenContainer.isExpired {
-            runMainFlow()
+            self.runMainFlow() // TODO: - When implement Auth
         } else {
-            let tempCredentials = AuthRequestModel(phone: "+79876543219", password: "qwerty")
-            AuthService()
-                .performLoginRequestAndSaveToken(credentials: tempCredentials) { [weak self] result in
-                    switch result {
-                    case .success:
-                        self?.runMainFlow()
-                    case .failure:
-                        // TODO: - Handle error, if token was not received
-                        break
-                    }
-                }
+            self.runAuthFlow()
         }
     }
 
+    func runAuthFlow() {
+        DispatchQueue.main.async {
+            let navigationController = UINavigationController(rootViewController: LoginViewController())
+            self.window?.rootViewController = navigationController
+        }
+    }
+    
     func runMainFlow() {
         DispatchQueue.main.async {
             self.window?.rootViewController = TabBarConfigurator().configure()
@@ -54,10 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func runLaunchScreen() {
-        let lauchScreenViewController = UIStoryboard(name: "LaunchScreen", bundle: .main)
+        let launchScreenViewController = UIStoryboard(name: "LaunchScreen", bundle: .main)
             .instantiateInitialViewController()
 
-        window?.rootViewController = lauchScreenViewController
+        window?.rootViewController = launchScreenViewController
     }
 
 }

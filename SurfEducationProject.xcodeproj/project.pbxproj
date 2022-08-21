@@ -44,6 +44,24 @@
 		76C18B7B289D1BBF00F301A1 /* DetailImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C18B79289D1BBF00F301A1 /* DetailImageTableViewCell.xib */; };
 		76C18B7F289D1CDA00F301A1 /* DetailTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C18B7D289D1CDA00F301A1 /* DetailTitleTableViewCell.swift */; };
 		76C18B80289D1CDA00F301A1 /* DetailTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C18B7E289D1CDA00F301A1 /* DetailTitleTableViewCell.xib */; };
+		CE247B0A28B15C5700991CE2 /* FavoriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE247B0928B15C5700991CE2 /* FavoriteService.swift */; };
+		CE247B0C28B1783B00991CE2 /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE247B0B28B1783B00991CE2 /* FavoriteItem.swift */; };
+		CE61E44328AF8C5700A911E3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61E44228AF8C5700A911E3 /* UIViewController.swift */; };
+		CE61E44628AF8D9600A911E3 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61E44528AF8D9600A911E3 /* SecureTextField.swift */; };
+		CE61E44828AF970D00A911E3 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61E44728AF970D00A911E3 /* UITextField.swift */; };
+		CE61E44B28AFD41C00A911E3 /* LogoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61E44A28AFD41C00A911E3 /* LogoutService.swift */; };
+		CE61E44D28AFDA1D00A911E3 /* LogoutRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61E44C28AFDA1D00A911E3 /* LogoutRequestModel.swift */; };
+		CE61E44F28AFDA5A00A911E3 /* LogoutResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61E44E28AFDA5A00A911E3 /* LogoutResponseModel.swift */; };
+		CE8C9C7328B2284500E913D1 /* FavoriteSrorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C9C7228B2284500E913D1 /* FavoriteSrorage.swift */; };
+		CE8C9C7528B2AF5400E913D1 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C9C7428B2AF5400E913D1 /* SearchModel.swift */; };
+		CEE1A81C28B0FD2D00179854 /* FavoriteItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1A81A28B0FD2D00179854 /* FavoriteItemCollectionViewCell.swift */; };
+		CEE1A81D28B0FD2D00179854 /* FavoriteItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE1A81B28B0FD2D00179854 /* FavoriteItemCollectionViewCell.xib */; };
+		CEE1A81F28B10E9400179854 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1A81E28B10E9400179854 /* FavoriteModel.swift */; };
+		CEEB1FE428ACE3250022CCF4 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB1FE328ACE3250022CCF4 /* SearchViewController.xib */; };
+		CEEB1FE628ACE4CE0022CCF4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB1FE528ACE4CE0022CCF4 /* SearchViewController.swift */; };
+		CEF979B428AE82CA00F3F615 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF979B228AE82CA00F3F615 /* LoginViewController.swift */; };
+		CEF979B528AE82CA00F3F615 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF979B328AE82CA00F3F615 /* LoginViewController.xib */; };
+		CEF979B728AE84CD00F3F615 /* MDFilledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF979B628AE84CD00F3F615 /* MDFilledTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +104,24 @@
 		76C18B79289D1BBF00F301A1 /* DetailImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailImageTableViewCell.xib; sourceTree = "<group>"; };
 		76C18B7D289D1CDA00F301A1 /* DetailTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTitleTableViewCell.swift; sourceTree = "<group>"; };
 		76C18B7E289D1CDA00F301A1 /* DetailTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTitleTableViewCell.xib; sourceTree = "<group>"; };
+		CE247B0928B15C5700991CE2 /* FavoriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteService.swift; sourceTree = "<group>"; };
+		CE247B0B28B1783B00991CE2 /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
+		CE61E44228AF8C5700A911E3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CE61E44528AF8D9600A911E3 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		CE61E44728AF970D00A911E3 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		CE61E44A28AFD41C00A911E3 /* LogoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutService.swift; sourceTree = "<group>"; };
+		CE61E44C28AFDA1D00A911E3 /* LogoutRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequestModel.swift; sourceTree = "<group>"; };
+		CE61E44E28AFDA5A00A911E3 /* LogoutResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponseModel.swift; sourceTree = "<group>"; };
+		CE8C9C7228B2284500E913D1 /* FavoriteSrorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSrorage.swift; sourceTree = "<group>"; };
+		CE8C9C7428B2AF5400E913D1 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		CEE1A81A28B0FD2D00179854 /* FavoriteItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEE1A81B28B0FD2D00179854 /* FavoriteItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		CEE1A81E28B10E9400179854 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		CEEB1FE328ACE3250022CCF4 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		CEEB1FE528ACE4CE0022CCF4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CEF979B228AE82CA00F3F615 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEF979B328AE82CA00F3F615 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CEF979B628AE84CD00F3F615 /* MDFilledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDFilledTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +138,7 @@
 		340DA83728A102D900EB2443 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CE247B0828B15C0E00991CE2 /* FavoriteService */,
 				340DA85028A115AA00EB2443 /* Storage */,
 				340DA83828A102E100EB2443 /* Networking */,
 			);
@@ -111,6 +148,7 @@
 		340DA83828A102E100EB2443 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CE61E44928AFD3FB00A911E3 /* LogoutService */,
 				340DA85728A123B700EB2443 /* ImageLoader */,
 				340DA84928A1145E00EB2443 /* PicturesService */,
 				340DA84228A1107300EB2443 /* AuthService */,
@@ -155,6 +193,7 @@
 				340DA85128A115B400EB2443 /* TokenStorage.swift */,
 				340DA85328A115CF00EB2443 /* TokenContainer.swift */,
 				340DA85528A115FD00EB2443 /* BaseTokenStorage.swift */,
+				CE8C9C7228B2284500E913D1 /* FavoriteSrorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -215,6 +254,7 @@
 			children = (
 				340DA83728A102D900EB2443 /* Services */,
 				50F902A82899131C0083B46E /* AppDelegate.swift */,
+				CEF979B028AE823300F3F615 /* AuthFlow */,
 				50F902EF289A724B0083B46E /* Application */,
 				50F902E7289A719A0083B46E /* MainFlow */,
 			);
@@ -224,6 +264,7 @@
 		50F902E7289A719A0083B46E /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				CEEB1FE228ACE2EA0022CCF4 /* SearchModule */,
 				76C18B71289D0E5700F301A1 /* DetailModule */,
 				50F902F0289A726E0083B46E /* TabBar */,
 				50F902EA289A71EF0083B46E /* FavoriteModule */,
@@ -255,8 +296,10 @@
 		50F902EA289A71EF0083B46E /* FavoriteModule */ = {
 			isa = PBXGroup;
 			children = (
+				CEE1A81728B0FC6500179854 /* Cell */,
 				50F902EB289A720F0083B46E /* FavoriteViewController.swift */,
 				50F902EC289A720F0083B46E /* FavoriteViewController.xib */,
+				CEE1A81E28B10E9400179854 /* FavoriteModel.swift */,
 			);
 			path = FavoriteModule;
 			sourceTree = "<group>";
@@ -336,6 +379,73 @@
 			path = TextCell;
 			sourceTree = "<group>";
 		};
+		CE247B0828B15C0E00991CE2 /* FavoriteService */ = {
+			isa = PBXGroup;
+			children = (
+				CE247B0928B15C5700991CE2 /* FavoriteService.swift */,
+				CE247B0B28B1783B00991CE2 /* FavoriteItem.swift */,
+			);
+			path = FavoriteService;
+			sourceTree = "<group>";
+		};
+		CE61E44428AF8C9700A911E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE61E44228AF8C5700A911E3 /* UIViewController.swift */,
+				CE61E44728AF970D00A911E3 /* UITextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE61E44928AFD3FB00A911E3 /* LogoutService */ = {
+			isa = PBXGroup;
+			children = (
+				CE61E44A28AFD41C00A911E3 /* LogoutService.swift */,
+				CE61E44C28AFDA1D00A911E3 /* LogoutRequestModel.swift */,
+				CE61E44E28AFDA5A00A911E3 /* LogoutResponseModel.swift */,
+			);
+			path = LogoutService;
+			sourceTree = "<group>";
+		};
+		CEE1A81728B0FC6500179854 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1A81A28B0FD2D00179854 /* FavoriteItemCollectionViewCell.swift */,
+				CEE1A81B28B0FD2D00179854 /* FavoriteItemCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CEEB1FE228ACE2EA0022CCF4 /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB1FE328ACE3250022CCF4 /* SearchViewController.xib */,
+				CE8C9C7428B2AF5400E913D1 /* SearchModel.swift */,
+				CEEB1FE528ACE4CE0022CCF4 /* SearchViewController.swift */,
+			);
+			path = SearchModule;
+			sourceTree = "<group>";
+		};
+		CEF979B028AE823300F3F615 /* AuthFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CEF979B128AE82AF00F3F615 /* LoginModule */,
+				CEF979B628AE84CD00F3F615 /* MDFilledTextField.swift */,
+				CE61E44528AF8D9600A911E3 /* SecureTextField.swift */,
+				CE61E44428AF8C9700A911E3 /* Extension */,
+			);
+			path = AuthFlow;
+			sourceTree = "<group>";
+		};
+		CEF979B128AE82AF00F3F615 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				CEF979B228AE82CA00F3F615 /* LoginViewController.swift */,
+				CEF979B328AE82CA00F3F615 /* LoginViewController.xib */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,11 +509,14 @@
 				76C18B75289D0E7200F301A1 /* DetailViewController.xib in Resources */,
 				761E9808289D1F1C005958C2 /* DetailTextTableViewCell.xib in Resources */,
 				7637F1B0289BC56E00F16F98 /* MainItemCollectionViewCell.xib in Resources */,
+				CEEB1FE428ACE3250022CCF4 /* SearchViewController.xib in Resources */,
 				50F902EE289A720F0083B46E /* FavoriteViewController.xib in Resources */,
 				76C18B80289D1CDA00F301A1 /* DetailTitleTableViewCell.xib in Resources */,
+				CEF979B528AE82CA00F3F615 /* LoginViewController.xib in Resources */,
 				50F902E6289A6A620083B46E /* ProfileViewController.xib in Resources */,
 				76C18B7B289D1BBF00F301A1 /* DetailImageTableViewCell.xib in Resources */,
 				50F902E2289A68980083B46E /* MainViewController.xib in Resources */,
+				CEE1A81D28B0FD2D00179854 /* FavoriteItemCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,20 +527,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE61E44628AF8D9600A911E3 /* SecureTextField.swift in Sources */,
 				76C18B74289D0E7200F301A1 /* DetailViewController.swift in Sources */,
 				50F902E1289A68980083B46E /* MainViewController.swift in Sources */,
 				50F902E5289A6A620083B46E /* ProfileViewController.swift in Sources */,
+				CE247B0A28B15C5700991CE2 /* FavoriteService.swift in Sources */,
+				CEEB1FE628ACE4CE0022CCF4 /* SearchViewController.swift in Sources */,
+				CE61E44B28AFD41C00A911E3 /* LogoutService.swift in Sources */,
+				CEF979B728AE84CD00F3F615 /* MDFilledTextField.swift in Sources */,
+				CE8C9C7328B2284500E913D1 /* FavoriteSrorage.swift in Sources */,
+				CE61E44D28AFDA1D00A911E3 /* LogoutRequestModel.swift in Sources */,
 				761E9807289D1F1C005958C2 /* DetailTextTableViewCell.swift in Sources */,
+				CEF979B428AE82CA00F3F615 /* LoginViewController.swift in Sources */,
+				CE61E44328AF8C5700A911E3 /* UIViewController.swift in Sources */,
 				76C18B7F289D1CDA00F301A1 /* DetailTitleTableViewCell.swift in Sources */,
 				340DA84D28A1148D00EB2443 /* EmptyModel.swift in Sources */,
 				50F902A92899131C0083B46E /* AppDelegate.swift in Sources */,
 				761E980A289D2088005958C2 /* DetailItemModel.swift in Sources */,
+				CEE1A81C28B0FD2D00179854 /* FavoriteItemCollectionViewCell.swift in Sources */,
 				340DA83F28A1060C00EB2443 /* BaseNetworkTask.swift in Sources */,
+				CEE1A81F28B10E9400179854 /* FavoriteModel.swift in Sources */,
+				CE61E44828AF970D00A911E3 /* UITextField.swift in Sources */,
 				340DA84828A1112A00EB2443 /* AuthResponseModel.swift in Sources */,
 				340DA85628A115FD00EB2443 /* BaseTokenStorage.swift in Sources */,
 				7637F1AB289BC16300F16F98 /* MainModel.swift in Sources */,
 				340DA85928A123C400EB2443 /* ImageLoader.swift in Sources */,
 				340DA85428A115CF00EB2443 /* TokenContainer.swift in Sources */,
+				CE61E44F28AFDA5A00A911E3 /* LogoutResponseModel.swift in Sources */,
 				340DA85B28A123D600EB2443 /* UIImageView+ImageLoader.swift in Sources */,
 				340DA85228A115B400EB2443 /* TokenStorage.swift in Sources */,
 				340DA84B28A1147400EB2443 /* PictureResponseModel.swift in Sources */,
@@ -438,7 +564,9 @@
 				340DA84128A1072D00EB2443 /* NetworkMethod.swift in Sources */,
 				50F902F4289A74460083B46E /* TabBarConfigurator.swift in Sources */,
 				340DA84428A1108400EB2443 /* AuthService.swift in Sources */,
+				CE247B0C28B1783B00991CE2 /* FavoriteItem.swift in Sources */,
 				340DA84628A110C300EB2443 /* AuthRequestModel.swift in Sources */,
+				CE8C9C7528B2AF5400E913D1 /* SearchModel.swift in Sources */,
 				76C18B7A289D1BBF00F301A1 /* DetailImageTableViewCell.swift in Sources */,
 				50F902F2289A72B90083B46E /* TabBarModel.swift in Sources */,
 			);
@@ -583,6 +711,7 @@
 				INFOPLIST_FILE = SurfEducationProject/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -609,6 +738,7 @@
 				INFOPLIST_FILE = SurfEducationProject/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
