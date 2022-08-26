@@ -47,28 +47,36 @@ struct BaseNetworkTask<AbstractInput: Encodable, AbstractOutput: Decodable>: Net
     ) {
         do {
             let request = try getRequest(with: input)
-
+            
             if let cachedResponse = getCachedResponseFromCache(by: request) {
-
+                
                 let mappedModel = try JSONDecoder().decode(AbstractOutput.self, from: cachedResponse.data)
                 onResponseWasReceived(.success(mappedModel))
-
+                
                 return
             }
-
+            
             session.dataTask(with: request) { data, response, error in
-                if let error = error {
-                    onResponseWasReceived(.failure(error))
-                } else if let data = data {
-                    do {
-                        let mappedModel = try JSONDecoder().decode(AbstractOutput.self, from: data)
-                        saveResponseToCache(response, cachedData: data, by: request)
-                        onResponseWasReceived(.success(mappedModel))
-                    } catch {
-                        onResponseWasReceived(.failure(error))
+                guard error == nil else { return onResponseWasReceived(.failure(error!)) }
+                guard let response = response as? HTTPURLResponse else {
+                    return onResponseWasReceived(.failure(error!))
+                }
+                switch response.statusCode {
+                case 204:
+                    let empty: LogoutResponseModel = LogoutResponseModel()
+                    onResponseWasReceived(.success(empty as! AbstractOutput))
+                default:
+                    if let data = data {
+                        do {
+                            let mappedModel = try JSONDecoder().decode(AbstractOutput.self, from: data)
+                            saveResponseToCache(response, cachedData: data, by: request)
+                            onResponseWasReceived(.success(mappedModel))
+                        } catch {
+                            onResponseWasReceived(.failure(error))
+                        }
+                    } else {
+                        onResponseWasReceived(.failure(NetworkTaskError.unknownError))
                     }
-                } else {
-                    onResponseWasReceived(.failure(NetworkTaskError.unknownError))
                 }
             }
             .resume()
@@ -76,7 +84,7 @@ struct BaseNetworkTask<AbstractInput: Encodable, AbstractOutput: Decodable>: Net
             onResponseWasReceived(.failure(error))
         }
     }
-
+    
 }
 
 // MARK: - EmptyModel

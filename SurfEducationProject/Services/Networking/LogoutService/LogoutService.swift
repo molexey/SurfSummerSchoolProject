@@ -9,7 +9,7 @@ import Foundation
 
 struct LogoutService {
     
-    let dataTask = BaseNetworkTask<LogoutRequestModel, LogoutResponseModel>(
+    let dataTask = BaseNetworkTask<LogoutRequestModel, LogoutResponseModel?>(
     inNeedInjectToken: true,
     method: .post,
     path: "auth/logout"
@@ -18,7 +18,7 @@ struct LogoutService {
     let storage = FavoriteStorage.shared
     
     func performLogoutRequestAndRemoveAllData(
-        _ onResponseWasReceived: @escaping (_ result: Result<LogoutResponseModel, Error>) -> Void 
+        _ onResponseWasReceived: @escaping (_ result: Result<LogoutResponseModel?, Error>) -> Void 
     ) {
         dataTask.performRequest(input: LogoutRequestModel()) { result in
             if case let .success(responseModel) = result {
